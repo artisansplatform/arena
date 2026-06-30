@@ -1,35 +1,34 @@
 <!-- HEADER -->
 <header
   id="arenaHeader"
-  class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-4 bg-white/80 backdrop-blur-xl border-b border-slate-200/60 transition-all duration-300"
+  class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-4 bg-white shadow-sm transition-all duration-300"
 >
   <div class="flex items-center gap-2.5">
     <a href="./">
       <img
         src="./images/artisanscloud-arena-logo.webp"
         alt="Arena"
-        class="h-9 w-auto"
+        class="h-16 w-auto"
       />
     </a>
   </div>
   <a
     href="contact-us"
-    class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm px-6 py-2.5 rounded-full no-underline transition-all duration-200 hover:-translate-y-px whitespace-nowrap"
+    class="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm px-5 py-2.5 rounded-lg no-underline transition-colors duration-200"
   >
     Book a Demo
-    <svg
-      width="14"
-      height="14"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-      stroke-width="2.5"
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M17 8l4 4m0 0l-4 4m4-4H3"
-      />
-    </svg>
   </a>
+  
+  <!-- Scroll Progress Bar -->
+  <div id="scrollProgress" class="absolute bottom-0 left-0 h-1 bg-blue-600 w-0 z-50"></div>
 </header>
+
+<script>
+  window.addEventListener('scroll', () => {
+    const scrollTotal = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    if (scrollTotal > 0) {
+      const scrollProgress = (window.scrollY / scrollTotal) * 100;
+      document.getElementById('scrollProgress').style.width = scrollProgress + '%';
+    }
+  });
+</script>
