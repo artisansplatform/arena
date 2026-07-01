@@ -38,6 +38,7 @@ export default defineConfig({
   test: {
     environment: "jsdom",
     globals: true,
+    passWithNoTests: true,
     exclude: ["**/node_modules/**", "**/dist/**"],
   },
 });
