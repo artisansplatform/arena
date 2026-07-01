@@ -18,17 +18,23 @@
   >
     Book a Demo
   </a>
-  
+
   <!-- Scroll Progress Bar -->
-  <div id="scrollProgress" class="absolute bottom-0 left-0 h-1 bg-blue-600 w-0 z-50"></div>
+  <div
+    id="scrollProgress"
+    class="absolute bottom-0 left-0 h-1 bg-blue-600 w-0 z-50"
+  ></div>
 </header>
 
 <script>
-  window.addEventListener('scroll', () => {
-    const scrollTotal = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  window.addEventListener("scroll", () => {
+    const scrollTotal =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
     if (scrollTotal > 0) {
       const scrollProgress = (window.scrollY / scrollTotal) * 100;
-      document.getElementById('scrollProgress').style.width = scrollProgress + '%';
+      document.getElementById("scrollProgress").style.width =
+        scrollProgress + "%";
     }
   });
 </script>
