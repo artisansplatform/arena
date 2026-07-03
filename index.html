@@ -235,16 +235,16 @@
 
     <!-- HERO -->
     <section
-      class="relative min-h-screen overflow-hidden flex items-center justify-center pt-[120px] pb-20 px-6 bg-slate-50 bg-[url('../../images/arena-ai-roleplay-banner.webp')] bg-no-repeat bg-[position:15%_center] lg:bg-center bg-cover lg:bg-[length:100%_auto]"
+      class="relative lg:min-h-screen overflow-hidden flex items-center justify-center pt-[100px] lg:pt-[120px] pb-12 lg:pb-20 px-6 bg-slate-50 lg:bg-[url('../../images/arena-ai-roleplay-banner.webp')] bg-no-repeat lg:bg-center lg:bg-cover lg:bg-[length:100%_auto]"
     >
-      <!-- Mobile-only overlay to ensure text is legible without affecting desktop -->
       <div
-        class="absolute inset-0 bg-white/70 lg:hidden z-0 pointer-events-none"
-      ></div>
-
-      <div
-        class="relative z-10 max-w-[1280px] w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12 items-center"
+        class="relative z-10 max-w-[1280px] w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center"
       >
+        <!-- Mobile Image (Visible only on mobile) -->
+        <div class="lg:hidden w-full flex justify-center">
+          <img src="images/arena-ai-roleplay-banner.webp" alt="AI Role Play Platform" class="w-[calc(100%+8rem)] max-w-[calc(100%+8rem)] -mx-16 md:w-[calc(100%+16rem)] md:max-w-[calc(100%+16rem)] md:-mx-32 h-auto block rounded-[20px]" />
+        </div>
+
         <!-- Left Column (Text & CTA) -->
         <div class="lg:col-span-6 flex flex-col items-start text-left">
           <div
@@ -270,8 +270,8 @@
           <p
             class="reveal rd-2 text-[clamp(15px,1.5vw,18px)] text-slate-600 max-w-[600px] mb-11 leading-[1.7] [text-shadow:_0_0_10px_#fff,_0_0_15px_#fff]"
           >
-            Build confidence before the conversations that <br />
-            shape customer relationships, leadership, sales <br />and business
+            Build confidence before the conversations that <br class="hidden md:block" />
+            shape customer relationships, leadership, sales <br class="hidden md:block" />and business
             outcomes.
           </p>
 
@@ -304,7 +304,7 @@
     </section>
 
     <!-- TRUSTED BY ENTERPRISES & PARTNERS -->
-    <section class="pt-10 pb-6">
+    <section class="py-24">
       <div class="max-w-[1240px] w-full px-5 mx-auto">
         <div class="text-slate-700 font-semibold text-lg text-center mb-8">
           Trusted by Enterprises &amp; Partners
@@ -1137,11 +1137,11 @@
         </div>
 
         <div
-          class="relative flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8 lg:gap-2 mb-10"
+          class="relative flex flex-col xl:flex-row items-center xl:items-start justify-between gap-8 xl:gap-2 mb-10"
         >
           <!-- Step 1 -->
           <div
-            class="reveal rd-1 flex flex-col items-center text-center w-full lg:w-[200px] relative z-10 shrink-0"
+            class="reveal rd-1 flex flex-col items-center text-center w-full xl:w-[170px] relative z-10 shrink-0"
           >
             <div
               class="relative w-[120px] h-[120px] mb-6 flex items-center justify-center"
@@ -1184,7 +1184,7 @@
 
           <!-- Desktop Arrow 1 -->
           <div
-            class="hidden lg:flex flex-1 items-center justify-center mt-[60px] text-blue-300 relative z-0 min-w-[20px] mx-2"
+            class="hidden xl:flex flex-1 items-center justify-center mt-[60px] text-blue-300 relative z-0 min-w-[20px] mx-2"
           >
             <div class="w-full border-t-2 border-dashed border-blue-200"></div>
             <svg
@@ -1196,9 +1196,9 @@
             </svg>
           </div>
           <!-- Mobile Arrow -->
-          <div class="lg:hidden text-blue-300 my-[-10px] z-0">
+          <div class="xl:hidden text-blue-300 my-[-10px] z-0">
             <svg
-              class="w-6 h-6 rotate-90"
+              class="w-6 h-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -1215,7 +1215,7 @@
 
           <!-- Step 2 -->
           <div
-            class="reveal rd-2 flex flex-col items-center text-center w-full lg:w-[200px] relative z-10 shrink-0"
+            class="reveal rd-2 flex flex-col items-center text-center w-full xl:w-[170px] relative z-10 shrink-0"
           >
             <div
               class="relative w-[120px] h-[120px] mb-6 flex items-center justify-center"
@@ -1258,7 +1258,7 @@
 
           <!-- Desktop Arrow 2 -->
           <div
-            class="hidden lg:flex flex-1 items-center justify-center mt-[60px] text-blue-300 relative z-0 min-w-[20px] mx-2"
+            class="hidden xl:flex flex-1 items-center justify-center mt-[60px] text-blue-300 relative z-0 min-w-[20px] mx-2"
           >
             <div class="w-full border-t-2 border-dashed border-blue-200"></div>
             <svg
@@ -1270,9 +1270,9 @@
             </svg>
           </div>
           <!-- Mobile Arrow -->
-          <div class="lg:hidden text-blue-300 my-[-10px] z-0">
+          <div class="xl:hidden text-blue-300 my-[-10px] z-0">
             <svg
-              class="w-6 h-6 rotate-90"
+              class="w-6 h-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -1289,7 +1289,7 @@
 
           <!-- Step 3 -->
           <div
-            class="reveal rd-3 flex flex-col items-center text-center w-full lg:w-[200px] relative z-10 shrink-0"
+            class="reveal rd-3 flex flex-col items-center text-center w-full xl:w-[170px] relative z-10 shrink-0"
           >
             <div
               class="relative w-[120px] h-[120px] mb-6 flex items-center justify-center"
@@ -1333,7 +1333,7 @@
 
           <!-- Desktop Arrow 3 -->
           <div
-            class="hidden lg:flex flex-1 items-center justify-center mt-[60px] text-blue-300 relative z-0 min-w-[20px] mx-2"
+            class="hidden xl:flex flex-1 items-center justify-center mt-[60px] text-blue-300 relative z-0 min-w-[20px] mx-2"
           >
             <div class="w-full border-t-2 border-dashed border-blue-200"></div>
             <svg
@@ -1345,9 +1345,9 @@
             </svg>
           </div>
           <!-- Mobile Arrow -->
-          <div class="lg:hidden text-blue-300 my-[-10px] z-0">
+          <div class="xl:hidden text-blue-300 my-[-10px] z-0">
             <svg
-              class="w-6 h-6 rotate-90"
+              class="w-6 h-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -1364,7 +1364,7 @@
 
           <!-- Step 4 -->
           <div
-            class="reveal rd-4 flex flex-col items-center text-center w-full lg:w-[200px] relative z-10 shrink-0"
+            class="reveal rd-4 flex flex-col items-center text-center w-full xl:w-[170px] relative z-10 shrink-0"
           >
             <div
               class="relative w-[120px] h-[120px] mb-6 flex items-center justify-center"
@@ -1410,7 +1410,7 @@
 
           <!-- Desktop Arrow 4 -->
           <div
-            class="hidden lg:flex flex-1 items-center justify-center mt-[60px] text-blue-300 relative z-0 min-w-[20px] mx-2"
+            class="hidden xl:flex flex-1 items-center justify-center mt-[60px] text-blue-300 relative z-0 min-w-[20px] mx-2"
           >
             <div class="w-full border-t-2 border-dashed border-blue-200"></div>
             <svg
@@ -1422,9 +1422,9 @@
             </svg>
           </div>
           <!-- Mobile Arrow -->
-          <div class="lg:hidden text-blue-300 my-[-10px] z-0">
+          <div class="xl:hidden text-blue-300 my-[-10px] z-0">
             <svg
-              class="w-6 h-6 rotate-90"
+              class="w-6 h-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -1441,7 +1441,7 @@
 
           <!-- Step 5 -->
           <div
-            class="reveal rd-5 flex flex-col items-center text-center w-full lg:w-[200px] relative z-10 shrink-0"
+            class="reveal rd-5 flex flex-col items-center text-center w-full xl:w-[170px] relative z-10 shrink-0"
           >
             <div
               class="relative w-[120px] h-[120px] mb-6 flex items-center justify-center"
@@ -2373,7 +2373,7 @@
                 />
               </svg>
             </div>
-            <span class="text-sm mt-3 font-semibold text-white leading-[1.4]"
+            <span class="text-sm sm:mt-3 font-semibold text-white leading-[1.4]"
               >Create a culture of continuous improvement</span
             >
           </div>
@@ -2565,13 +2565,13 @@
     </section>
 
     <!-- OUR BELIEF -->
-    <section class="py-24 px-6 bg-[#f8faff]">
+    <section class="py-24 px-6 bg-[#f8faff] overflow-hidden">
       <div class="max-w-[1160px] mx-auto text-center">
         <div class="reveal flex justify-center">
           <img
             src="images/arena-ai-roleplay-our-belief.webp"
             alt="Our Belief - Training Builds Knowledge, Practice Builds Confidence, Confidence Drives Performance"
-            class="w-full h-auto max-w-full"
+            class="w-[calc(100%+5rem)] max-w-[calc(100%+5rem)] -mx-10 md:w-full md:max-w-full md:mx-0 h-auto"
           />
         </div>
       </div>
@@ -2580,7 +2580,7 @@
     <!-- CTA -->
     <section
       id="arena-demo"
-      class="relative overflow-hidden py-[100px] px-6 text-center bg-gradient-to-br from-[#0d1b4b] via-[#1e3a8a] to-[#0d1b4b]"
+      class="relative overflow-hidden py-24 px-6 text-center bg-gradient-to-br from-[#0d1b4b] via-[#1e3a8a] to-[#0d1b4b]"
     >
       <div
         class="absolute top-[-200px] left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-[radial-gradient(circle,rgba(59,130,246,0.18)_0%,transparent_70%)] pointer-events-none"
