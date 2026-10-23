@@ -2,6 +2,8 @@
 
 Static marketing website for Arena, the Enterprise Practice Platform. Vanilla HTML/JS + Tailwind CSS v4 on Vite, deployed to Vercel.
 
+**Node.js 24 is required** for both local development and Vercel (production). Pinned via `"engines": { "node": "24.x" }` in `package.json`, which Vercel reads.
+
 ## Global Writing Rules
 
 **Never use em dashes anywhere in the codebase.** Always replace with commas, periods, colons, or parentheses.
